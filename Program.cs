@@ -13,12 +13,12 @@ Console.ReadLine();
 static async Task ProcessAsync()
 {
     // Copy the connection string from the portal in the variable below.
-    string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=tn204sa;AccountKey=ftCED+g25Q55F2GB1gN2Z2tU+KI/iLKMh5ZyEbOITsjrU5myUQdZnzXLNc2f3GCzCzaIMVNmAVer+ASt4KQ2Ow==;EndpointSuffix=core.windows.net";
+    string storageConnectionString = "Storage Connection String";
 
     // Create a client that can authenticate with a connection string
     // And create container
     BlobContainerClient containerClient = await CreateContainer(storageConnectionString);
-
+S
     await ReadContainerPropertiesAsync(containerClient);
     await AddContainerMetadataAsync(containerClient);
     await ReadContainerMetadataAsync(containerClient);
